@@ -1,0 +1,333 @@
+
+/* Banner */
+.banner {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.join-btn {
+  position: absolute;
+  top: 68%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #BCCCDC;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+/* Bestsellers */
+.bestsellers {
+  background-color: #F8FAFC;
+  text-align: center;
+  padding: 50px 20px;
+  overflow: visible;
+}
+
+.bestsellers h2 {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #9AA6B2;
+}
+
+.bestsellers p {
+  font-family: "League Spartan";
+  font-size: 22px;
+  color: #d0d0d0;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: fit-content;
+  align-items: center;
+  gap: 60px; 
+}
+
+.carousel-item {
+  flex: 0 0 280px; 
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(154,166,178,1);
+  opacity: 0.6;
+  transform: scale(0.85);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel-item:nth-child(2) img {
+  transform: scale(1.1); 
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #9AA6B2;
+  cursor: pointer;
+  padding: 0 10px;
+  user-select: none;
+  transition: 0.3s ease;
+}
+
+.carousel-btn:hover {
+  color: #5b2a86;
+}
+
+.carousel-nav {
+  margin-top: 30px; 
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 6px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #9AA6B2;
+}
+
+.discover-btn {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: white;
+  color: #BCCCDC;
+  font-family: "League Spartan", sans-serif;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* About Us */
+.about-us {
+  background-color: #d9eafd;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.about-us h2 {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.about-us .quote {
+  font-family: 'League Spartan';
+  font-size: 22px;
+  color: #9AA6B2;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.about-us .story {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background-color: #F8FAFC;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.why-choose-us h2 {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  color: #9aa6b2;
+  margin-bottom: 40px;
+}
+
+/* Card styling for features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature.card {
+  width: 250px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(154,166,178,0.7);
+  transition: 0.3s ease;
+  padding-top: 20px;
+}
+
+.feature.card:hover {
+  box-shadow: 0 8px 16px rgba(154,166,178,1);
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.feature h3 {
+  font-family: 'League Spartan';
+  font-size: 22px;
+  color: #9aa6b2;
+  margin: 10px 0;
+}
+
+.feature p {
+  font-family: 'Lato';
+  font-size: 18px;
+  color: #9aa6b2;
+}
+
+
+/* FAQ + PROMO FLIP CARD */
+
+/*FAQ BOX*/
+.faq-promo {
+  background-color: #D9EAFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  border-bottom: 1px solid #BCCCDC;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.faq, .promo {
+  flex: 1 1 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq h2 {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.faq-sub {
+  font-family: 'League Spartan';
+  font-size: 22px;
+  color: #9AA6B2;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.faq-box {
+  background-color: #bcccdc;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  overflow-y: auto;
+}
+.faq-box select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-family: 'Lato';
+  color: black;
+  font-size: 20px;
+}
+.faq-answer {
+  margin-top: 15px;
+  font-family: 'Lato';
+  color: white;
+  font-size: 20px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 360px;
+  height: 360px;
+  perspective: 1000px;
+  overflow: hidden; 
+}
+
+/*Flip card*/
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}

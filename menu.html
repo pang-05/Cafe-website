@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Moonbucks</title>
+  <link rel="icon" href="images/simplifiedlogo.png" type="images/png">
+  <link rel="stylesheet" href="css/design.css" />
+  <link rel="stylesheet" href="css/menu.css" /> 
+</head>
+
+<body>
+<!-- Header -->
+<header class="header">
+  <div class="header-left">
+    <a href="home.html">
+      <img src="images/headerlogo.svg" alt="Moonbucks Logo" class="logo">
+    </a>
+  </div>
+
+  <div class="hamburger" onclick="toggleMobileMenu()">&#9776;</div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="home.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="contact.html">CONTACT US</a>
+    <a href="team.html">OUR TEAM</a>
+  </nav>
+
+  <div class="header-right" id="headerRight">
+    <input type="text" placeholder="Search..." id="searchInput" class="search-bar"/>
+    <img src="images/searchicon.png" alt="Search" class="icon" id="searchIcon" />
+    <a href="shoppingcart.html"><img src="images/carticon.png" alt="Cart" class="icon" /></a>
+    <a href="login.html" class="login-btn">LOG IN</a>
+  </div>
+</header>
+
+<!-- Categories -->
+<main>
+  <div class="filter-buttons">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('drink')">Drinks</button>
+    <button onclick="filterMenu('food')">Food</button>
+  </div>
+
+   <div class="view-cart-button">
+    <a href="shoppingcart.html">View Cart</a>
+  </div>
+
+  <section class="menu-container">
+
+    <!-- Menu Items -->
+    <div class="menu-item" data-category="drink">
+      <img src="./images/Menu/Caffe Americano.png" alt="Caffe Americano">
+      <h3>Caffe Americano</h3>
+      <p>Rich espresso with hot water</p>
+      <p class="price">RM 12.00</p>
+      <button onclick="addToCart('Caffe Americano', 12.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="drink">
+    <img src="./images/Menu/Iced Caffe Latte.png" alt="Iced Caffe Latte">
+    <h3>Iced Caffe Latte</h3>
+    <p>Espresso with milk over ice</p>
+    <p class="price">RM 13.00</p>
+    <button onclick="addToCart('Iced Caffe Latte', 13.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="drink">
+      <img src="./images/Menu/Espresso.png" alt="Espresso">
+      <h3>Espresso</h3>
+      <p>Strong and bold espresso shot</p>
+      <p class="price">RM 8.00</p>
+      <button onclick="addToCart('Espresso', 10.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="drink">
+      <img src="./images/Menu/Caffe Mocha.png" alt="Caffe Mocha">
+      <h3>Caffe Mocha</h3>
+      <p>Chocolate espresso blend</p>
+      <p class="price">RM 14.00</p>
+      <button onclick="addToCart('Caffe Mocha', 14.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="drink">
+    <img src="./images/Menu/Iced Caffe Mocha.png" alt="Iced Caffe Mocha">
+    <h3>Iced Caffe Mocha</h3>
+    <p>Mocha served cold</p>
+    <p class="price">RM 14.50</p>
+    <button onclick="addToCart('Iced Caffe Mocha', 14.50)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="drink">
+    <img src="./images/Menu/Caramel Macchiato.png" alt="Caramel Macchiato">
+    <h3>Caramel Macchiato</h3>
+    <p>EEspresso with caramel milk</p>
+    <p class="price">RM 14.50</p>
+    <button onclick="addToCart('Caramel Macchiato', 14.50)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="drink">
+    <img src="./images/Menu/Iced Coffee.png" alt="Iced Coffee">
+    <h3>Iced Coffee</h3>
+    <p>Chilled coffee brewed to perfection</p>
+    <p class="price">RM 12.00</p>
+    <button onclick="addToCart('Iced Coffee', 12.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="food">
+    <img src="./images/Menu/Ham & Swiss on Baguette.png" alt="Ham & Swiss on Baguette">
+    <h3>Ham & Swiss on Baguette</h3>
+    <p>Ham and cheese sandwich</p>
+    <p class="price">RM 15.00</p>
+    <button onclick="addToCart('Ham & Swiss on Baguette', 15.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="food">
+    <img src="./images/Menu/Spicy Falafel Pocket.png" alt="Spicy Falafel Pocket">
+    <h3>Spicy Falafel Pocket</h3>
+    <p>Falafel with spicy sauce in pita</p>
+    <p class="price">RM 12.00</p>
+    <button onclick="addToCart('Spicy Falafel Pocket', 12.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="food">
+      <img src="./images/Menu/Butter Croissant.png" alt="Butter Croissant">
+      <h3>Butter Croissant</h3>
+      <p>Flaky buttery croissant</p>
+      <p class="price">RM 10.00</p>
+      <button onclick="addToCart('Buttery Croissant', 11.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="food">
+    <img src="./images/Menu/Cheese Danish.png" alt="Cheese Danish">
+    <h3>Cheese Danish</h3>
+    <p>Soft pastry filled with sweet cheese</p>
+    <p class="price">RM 9.50</p>
+    <button onclick="addToCart('Cheese Danish', 9.50)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="food">
+    <img src="./images/Menu/Chocolate Croissant.png" alt="Chocolate Croissant">
+    <h3>Chocolate Croissant</h3>
+    <p>Classic croissant filled with chocolate</p>
+    <p class="price">RM 9.00</p>
+    <button onclick="addToCart('Chocolate Croissant', 9.00)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item" data-category="food">
+    <img src="./images/Menu/Breakfast Sandwich.png" alt="Impossible Breakfast Sandwich">
+    <h3>Breakfast Sandwich</h3>
+    <p>Plant-based sausage with egg and cheese</p>
+    <p class="price">RM 16.50</p>
+    <button onclick="addToCart('Breakfast Sandwich', 16.50)">Add to Cart</button>
+    </div>
+    
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+   <div class="footer-top">
+      <hr />
+      <button id="goToTop">↑</button>
+      <p class="top-btn-label">GO TO TOP</p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-col left">
+        <a href="home.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="team.html">OUR TEAM</a>
+      </div>
+
+    <div class="footer-col center">
+        <div class="center-content">
+            <img src="images/footerlogo.png" alt="Footer Logo" class="footer-logo">
+        <div class="socials">
+            <a href="#"><img src="images/igicon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/xicon.png" alt="X"></a>
+            <a href="#"><img src="images/tiktokicon.png" alt="TikTok"></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer-col right">
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">TERMS OF USE</a>
+        <a href="#">WEB ACCESSIBILITY</a>
+        <a href="#">COOKIE PREFERENCE</a>
+    </div>
+    </div>
+    <hr />
+    <p class="copyright">COPYRIGHT 2025 © MOONBUCKS</p>
+</footer>
+
+  <script src="js/design.js"></script>
+  <script src="js/menu.js"></script> 
+</body>
+</html>

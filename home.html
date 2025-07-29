@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Moonbucks</title>
+  <link rel="icon" href="images/simplifiedlogo.png" type="images/png">
+  <link rel="stylesheet" href="css/design.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-left">
+    <a href="home.html">
+      <img src="images/headerlogo.svg" alt="Moonbucks Logo" class="logo">
+    </a>
+
+  </div>
+
+  <div class="hamburger" onclick="toggleMobileMenu()">&#9776;</div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="home.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="contact.html">CONTACT US</a>
+    <a href="team.html">OUR TEAM</a>
+  </nav>
+
+  <div class="header-right" id="headerRight">
+    <input type="text" placeholder="Search..." class="search-bar" />
+    <a href="#"><img src="images/searchicon.png" alt="Search" class="icon" /></a>
+    <a href="shoppingcart.html"><img src="images/carticon.png" alt="Cart" class="icon" /></a>
+    <a href="login.html" class="login-btn">LOG IN</a>
+  </div>
+</header>
+
+<!-- Banner -->
+  <section class="banner">
+     <img src="images/homepage/banner.png" alt="Banner" class="banner-img">
+     <a href="login.html" class="join-btn">JOIN US!</a>
+  </section>
+
+  <!--Bestsellers-->
+  <section class="bestsellers">
+  <h2>BESTSELLERS</h2>
+  <p>Customer Favourites – Loved by All, Brewed by Us</p>
+
+  <div class="carousel-wrapper">
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item"><img src="images/homepage/bestseller1.png" alt="Bestseller 1"></div>
+        <div class="carousel-item"><img src="images/homepage/bestseller2.png" alt="Bestseller 2"></div>
+        <div class="carousel-item"><img src="images/homepage/bestseller3.png" alt="Bestseller 3"></div>
+      </div>
+    </div>
+</div>
+  </div>
+
+  <div class="carousel-nav">
+    <span class="dot active" onclick="moveCarousel(0)"></span>
+    <span class="dot" onclick="moveCarousel(1)"></span>
+    <span class="dot" onclick="moveCarousel(2)"></span>
+  </div>
+
+  <a href="menu.html" class="discover-btn">DISCOVER MORE</a>
+</section>
+
+ <!-- About Us -->
+  <section class="about-us">
+    <h2>ABOUT US | OUR STORY</h2>
+    <p class="quote">“Every sip is a quiet gesture of kindness.”</p>
+    <p class="story">
+      Moonbucks was born from a shared love of coffee and an age-old tale that still stirs hearts. Inspired by the East Asian legend of the Moon Rabbit — a mythical figure said to craft elixirs on the moon — we envisioned a café that brews more than just coffee.
+    </p>
+    <p class="story">
+      Like the rabbit’s quiet devotion, every cup we serve is made with intention, warmth, and care. To us, coffee is a ritual — a chance to pause, breathe, and find a little peace in the middle of it all.
+    </p>
+    <p class="story">
+      At Moonbucks, we don’t just serve drinks. We serve comfort, good fortune, and a touch of lunar magic in every sip.
+    </p>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose-us">
+  <h2>WHY CHOOSE US ?</h2>
+  <div class="features">
+    <div class="feature card">
+      <img src="images/homepage/sustainableicon.png" alt="Sustainable">
+      <div class="container">
+        <h3>Sustainably Sourced</h3>
+        <p>We partner with farmers who use ethical, sustainable farming practices.</p>
+      </div>
+    </div>
+
+    <div class="feature card">
+      <img src="images/homepage/freshicon.png" alt="Fresh">
+      <div class="container">
+        <h3>Freshly Roasted</h3>
+        <p>Our beans are roasted in small batches to ensure maximum freshness and flavour.</p>
+      </div>
+    </div>
+
+    <div class="feature card">
+      <img src="images/homepage/experticon.png" alt="Expert">
+      <div class="container">
+        <h3>Expertly Crafted</h3>
+        <p>Each blend is designed to highlight the best qualities of the beans.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ & Promo -->
+<section class="faq-promo">
+  <div class="faq">
+    <h2>FAQ</h2>
+    <p class="faq-sub">Have a question? So did everyone else. Pick one below and get to know us a little better.</p>
+    <div class="faq-box">
+      <select id="faqSelect" onchange="showAnswer()">
+        <option value="" disabled selected>question</option>
+        <option value="1">Do you offer dairy-free options?</option>
+        <option value="2">When are you open?</option>
+        <option value="3">Can I book the cafe for private events?</option>
+      </select>
+      <div id="faqAnswer" class="faq-answer"></div>
+    </div>
+  </div>
+
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    
+    <div class="flip-card-front">
+      <img src="images/homepage/promotionposter.png" alt="Promotion Poster" />
+    </div>
+    
+    <div class="flip-card-back">
+      <img src="images/homepage/qrcode.png" alt="QR CODE" />
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <hr />
+      <button id="goToTop">↑</button>
+      <p class="top-btn-label">GO TO TOP</p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-col left">
+        <a href="home.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="team.html">OUR TEAM</a>
+      </div>
+
+    <div class="footer-col center">
+        <div class="center-content">
+            <img src="images/footerlogo.png" alt="Footer Logo" class="footer-logo">
+        <div class="socials">
+            <a href="#"><img src="images/igicon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/xicon.png" alt="X"></a>
+            <a href="#"><img src="images/tiktokicon.png" alt="TikTok"></a>
+        </div>
+        </div>
+    </div>
+
+      <div class="footer-col right">
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">TERMS OF USE</a>
+        <a href="#">WEB ACCESSIBILITY</a>
+        <a href="#">COOKIE PREFERENCE</a>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">COPYRIGHT 2025 © MOONBUCKS</p>
+  </footer>
+
+  <script src="js/design.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
